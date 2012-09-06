@@ -1,0 +1,23 @@
+{% extends "base/base.html" %}
+{% block content %}
+<table id="columns">
+    <tbody>
+        <tr>
+            <td id="main">
+                <div id="header">
+                    <h2 >我的家园</h2>
+                </div>
+                <div id="content">
+                    <div id="stream" class="message"><ol class="wa solo"></ol></div>
+                    {% include "microblog/publish.html" %}
+                    <div id="stream" class="message">
+                    {% include "microblog/shuoshuolist.html" %}
+                    </div>
+                    {% include "sidebar/pagebar.html" %}
+                </div>
+            </td>
+                {% include "sidebar/sidebar.html" %}
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

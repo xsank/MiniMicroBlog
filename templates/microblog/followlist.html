@@ -1,0 +1,13 @@
+<ol class="wa">
+{% if not friendlist %}
+<p>
+    你现在一个关注的人都木有，打算怎么办呢？赶紧出发吧！
+</p>
+{% else %}
+    {% for item in friendlist %}
+        <li class="unlight">
+            {% include "microblog/useritem.html" %}
+        </li>
+    {% endfor %}
+{% endif %}
+</ol>

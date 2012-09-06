@@ -1,0 +1,15 @@
+{% load usertags %}
+<span>
+    <a class="avatar" href="/user/{{ item.user.username }}/1/" ><img src="{{ item.user.photo|photo }}" width="41px" height="41px" title="{{ item.user.username }}" /></a>
+    <a href="{{ item.user.url }}" class="author">{{ item.user.realname }}</a>
+</span>
+<span class="content">{{ item.message }}<a href="/message/{{ item.id }}">more...</a></span>
+<span class="stamp">
+    {{ item.uptime|timesince }}前，
+    <span class="method">
+        通过 {{ item.postway.name }}
+    </span>
+    {% ifequal item.user.id userinfo.id %}
+    <span><a href="/prompt/delshuoshuo/{{ item.id }}/"> 删除</a></span>
+    {% endifequal %}
+</span>

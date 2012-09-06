@@ -1,0 +1,35 @@
+{% extends "base/base.html" %}
+{% load usertags %}
+{% block content %}
+    <div id="body" class="narrowlook ui-roundedbox" style="margin-top: 1em;padding-bottom: 1.5em;">
+        <div id="topbox" class="ui-roundedbox-content" style="padding: 25px 15px 10px;">
+            <div id="info">
+                <div id="avatar">
+                    <a href="#"><img src="{{ shuoshuo.user.photo|photo }}" class="msgat" title="{{ shuoshuo.user.username }}"></a>
+                </div>
+                <div id="latest" class="msg">
+                    <h1>
+                        <a href="#">
+                            {{ shuoshuo.user.username }}
+                        </a>
+                    </h1>
+                    <h2>
+                        <span class="content">
+                            {{ shuoshuo.message }}
+                        </span>
+                        <span class="stamp">
+                            {{ shuoshuo.uptime|timesince }}前，
+                            <span class="method">
+                                通过 {{ shuoshuo.postway.name }}
+                            </span>
+                            {% ifequal shuoshuo.user.id userinfo.id %}
+                                <span><a href="#"> 删除</a></span>
+                            {% endifequal %}
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="bottombox"></div>
+    </div>
+{% endblock %}

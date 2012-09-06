@@ -1,0 +1,69 @@
+{% extends "base/base.html" %}
+{% block content %}
+<table id="columns">
+    <tbody>
+    <tr>
+        <td id="main">
+            <p id="headline">Django，不错的开发框架</p>
+            <ul id="slogan">
+                <li id="what">
+                    <p>mini轻博客<br>记录生活点滴</p>
+                </li>
+                <li id="who">
+                    <p>交流分享<br>拉近你和朋友</p>
+                </li>
+                <li id="how">
+                    <p>随时随地<br>手机，QQ，计算机</p>
+                </li>
+            </ul>
+            <p id="get-started">
+                <a href="/register">注册</a>
+            </p>
+        </td>
+        <td id="sidebar">
+            <div class="sect first-sect">
+                <h2>登录MiniMicroBlog</h2>
+                <form method="POST" action="." id="login">
+                    <p class>
+                        <label class="label_input" for="username">用户名：</label>
+                        {{ form.username }}*
+                    </p>
+                    <p>
+                        {{ form.username.errors }}
+                        {{ form.password.errors }}
+                    </p>
+                    <p class>
+                        <label class="label_input" for="password">密码：</label>
+                        {{ form.password }}*
+                    </p>
+                    <p class="act">
+                        <a href="/reset" id="forgot">忘记密码了？</a>
+                        <input type="hidden" name="action" value="login">
+                        <input tabindex="11" type="submit" class="formbutton" value="登录">
+                    </p>
+                </form>
+            </div>
+            <div class="sect">
+                <h2>公告</h2>
+                <ul class="tlist">
+                    <li>
+                        <a href="/help/aboutme/" target="_blank">联系我</a>
+                        <sup style="font-size:12px;color:red;">New!</sup>
+                    </li>
+                    <li>
+                        短信请发到：18730231197
+                    </li>
+                    <li>
+                        邮编到：071002</li>
+                    <li>
+                        Call Me：18730231197
+                    </li>
+                    <li>Email：825128975@qq.com
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+{% endblock %}

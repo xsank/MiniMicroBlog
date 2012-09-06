@@ -1,0 +1,20 @@
+{% load usertags %}
+{% load relationtags %}
+<a class="avatar" href="/user/{{ item.username }}/1/" ><img src="{{ item.photo|photo }}" width="41px" height="41px" title="{{ item.username }}" /></a>
+<a href="{{ item.url }}" class="name">{{ item.username }}</a>
+<p class="location">
+    所在地：
+    <span class="region">
+        Xsank的小站
+    </span>
+</p>
+<p class="lastmsg">
+    {{ item.aboutme }}
+</p>
+<p class="actions">
+    {% if item|inrelation:friendlist %}
+        <a href="/prompt/unfollow/{{ item.username }}/" title="{{ item.username }}" class="post_act bh">取消关注</a>
+    {% else %}
+        <a href="/prompt/follow/{{ item.username }}/" title="{{ item.username }}" class="post_act bh">关注此人</a>
+    {% endif %}
+</p>

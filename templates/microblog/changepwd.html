@@ -1,0 +1,39 @@
+{% extends "base/base.html" %}
+{% block content %}
+    <table id="columns">
+        <tbody>
+        <tr>
+            <td id="main">
+                <div id="phupdate">
+                    <h2 >密码修改</h2>
+                    <div class="act">
+                    </div>
+                </div>
+                <div id="content">
+                    <div id="stream" class="message"><ol class="wa solo"></ol></div>
+                    <form action="." method="post" >
+                        <p>
+                              旧密码:<input type="password" name="oldpassword" class="text" size="25" />
+                            {{ error.wrong }}
+                        </p>
+                        <p>
+                              新密码:<input type="password" name="newpassword" class="text" size="25" />
+                            {{ error.short }}
+                        </p>
+                        <p>
+                            确认密码:<input type="password" name="checkpassword" class="text" size="25" />
+                            {{ error.nomatch }}
+                        </p>
+                        <p class="act">
+                            {{ error.no }}
+                            <input tabindex="11" type="submit" class="formbutton" value="保存">
+                        </p>
+                    </form>
+                </div>
+                </div>
+            </td>
+            {% include "sidebar/sidebar.html" %}
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}

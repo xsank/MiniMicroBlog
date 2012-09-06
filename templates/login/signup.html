@@ -1,0 +1,47 @@
+{% extends "base/base.html" %}
+{% block content %}
+<div id="sign-up" class="ui-roundedbox">
+    <div class="ui-roundedbox-corner ui-roundedbox-tl">
+        <div class="ui-roundedbox-corner ui-roundedbox-tr">
+            <div class="ui-roundedbox-corner ui-roundedbox-bl">
+                <div class="ui-roundedbox-corner ui-roundedbox-br">
+                    <div class="ui-roundedbox-content">
+                        <h2>注册MiniMicroBlog</h2>
+                        <form method="POST" action="." id="register" class="nf lf" style="position: relative; z-index: 1;">
+                            <p class>
+                                {{ form.username.errors }}
+                                <label class="label_input" for="username">昵称：</label>
+                                {{ form.username }}*
+                            </p>
+                            <p class>
+                                {{ form.realname.errors }}
+                                <label class="label_input" for="realname">真实姓名：</label>
+                                {{ form.realname }}*
+                            </p>
+                            <p class>
+                                {{ form.email.errors }}
+                                <label class="label_input" for="email">邮箱：</label>
+                                {{ form.email }}*
+                            </p>
+                            <p class>
+                                <label class="label_input" for="password">密码：</label>
+                                {{ form.password }}*
+                            </p>
+                            <p>
+                                {{ form.checkpassword.errors }}
+                            </p>
+                            <p class>
+                                <label class="label_input" for="checkpassword">确认密码：</label>
+                                {{ form.checkpassword }}*
+                            </p>
+                            <p class="act">
+                                <input tabindex="11" type="submit" class="formbutton" value="注册">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

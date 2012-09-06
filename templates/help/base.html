@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <script type="text/javascript" charset="utf-8" src="/static/script/jquery-1.7.min.js"></script>
+    <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" charset="utf-8">
+    <title>MiniMicroBlog</title>
+    <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+</head>
+<body>
+<div id="container" class="newlook">
+    <div id="header">
+        <h1>
+            <a hidefocus="true" class="global-header-anchor" href="http://127.0.0.1:8000/">
+                <p class="pngfix global-header-content">首页</p>
+            </a>
+        </h1>
+    </div>
+    {% block content %}
+    {% endblock %}
+{% include "sidebar/footer.html" %}
+</div>
+
+</body>
+</html>

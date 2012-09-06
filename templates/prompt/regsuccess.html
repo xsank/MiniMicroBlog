@@ -1,0 +1,30 @@
+{% extends "base/base.html" %}
+{% block content %}
+<div id="body" class="ui-roundedbox">
+    <div class="ui-roundedbox-corner ui-roundedbox-tl">
+        <div class="ui-roundedbox-corner ui-roundedbox-tr">
+            <div class="ui-roundedbox-corner ui-roundedbox-bl">
+                <div class="ui-roundedbox-corner ui-roundedbox-br">
+                    <div class="ui-roundedbox-content">
+                        <div class="inner-content">
+                            {% include "sidebar/sidebarhelp.html" %}
+                            <div id="help">
+                                <h2>注册成功！</h2>
+                                <ul>
+                                    <li>
+                                        恭喜你！注册成功，请根据下面提示操作！
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <img src="/static/images/signup-button.png" alt="点我跳转"><a href="/login/">->点我</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

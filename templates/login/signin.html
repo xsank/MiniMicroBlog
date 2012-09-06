@@ -1,0 +1,36 @@
+{% extends "base/base.html" %}
+{% block content %}
+<div id="sign-in" class="ui-roundedbox">
+    <div class="ui-roundedbox-corner ui-roundedbox-tl">
+        <div class="ui-roundedbox-corner ui-roundedbox-tr">
+            <div class="ui-roundedbox-corner ui-roundedbox-bl">
+                <div class="ui-roundedbox-corner ui-roundedbox-br">
+                    <div class="ui-roundedbox-content">
+                        <h2>登录MiniMicroBlog</h2>
+                        <form method="POST" action="." id="register" class="nf lf" style="position: relative; z-index: 1;">
+                            <p class>
+                                <label class="label_input" for="username">用户名：</label>
+                                {{ form.username }}*
+                            </p>
+                            <p>
+                                {{ form.username.errors }}
+                                {{ form.password.errors }}
+                            </p>
+                            <p class>
+                                <label class="label_input" for="password">密码：</label>
+                                {{ form.password }}*
+                            </p>
+                            <p class="act">
+                                <input tabindex="11" type="submit" class="formbutton" value="登录">
+                            </p>
+                        </form>
+                        <div id="sign-bottom">
+                            <p>还没有账号？<a href="/register">立即注册</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

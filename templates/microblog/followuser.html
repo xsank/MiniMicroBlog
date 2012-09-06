@@ -1,0 +1,23 @@
+{% extends "base/base.html" %}
+{% block content %}
+    <table id="columns">
+        <tbody>
+        <tr>
+            <td id="main">
+                <div id="header">
+                    <h2 >看看我关注的帅哥靓妹</h2>
+                </div>
+                <div id="content">
+                    <div id="stream" class="message"><ol class="wa solo"></ol>
+                        {% include "microblog/followlist.html" %}
+                    </div>
+                    {% if friendlist %}
+                    {% include "sidebar/pagebar.html" %}
+                    {% endif %}
+                </div>
+            </td>
+            {% include "sidebar/sidebar.html" %}
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}

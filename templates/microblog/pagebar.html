@@ -1,0 +1,35 @@
+{% spaceless %}
+    <div style="float:right;">
+        <span>
+        {% ifequal page_index 1 %}
+        首页&nbsp;
+        {% else %}
+        <a href="/{{ name }}/{{ 1 }}" style="text-decoration: none;">首页&nbsp;</a>
+        {% endifequal %}
+        </span>
+        <span>
+        {% if has_prev %}
+        <a href="/{{ name }}/{{ page_prev }}" style="text-decoration: none;">往上</a>
+        {% else %}
+        往上
+        {% endif %}
+        </span>
+        <span>
+        {{ page_index }}/{{ page_count }}
+        </span>
+        <span>
+        {% if has_next %}
+            <a href="/{{ name }}/{{ page_next }}" style="text-decoration: none;">往下&nbsp;</a>
+        {% else %}
+        往下&nbsp;
+        {% endif %}
+        </span>
+        <span>
+        {% ifequal page_index page_count %}
+        尾页
+        {% else %}
+        <a href="/{{ name }}/{{ page_count }}" style="text-decoration: none;">尾页</a>
+        {% endifequal %}
+        </span>
+    </div>
+{% endspaceless %}

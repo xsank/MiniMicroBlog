@@ -1,0 +1,24 @@
+{% extends "base/base.html" %}
+{% block content %}
+    <table id="columns">
+        <tbody>
+        <tr>
+            <td id="main">
+                <div id="phupdate">
+                    <h2 >友情提示</h2>
+                    <div class="act">
+                    </div>
+                </div>
+                <div id="content">
+                    <div id="stream" class="message"><ol class="wa solo"></ol></div>
+                    <p>
+                        {{ message }}
+                    </p>
+                </div>
+                </div>
+            </td>
+            {% include "sidebar/sidebar.html" %}
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}

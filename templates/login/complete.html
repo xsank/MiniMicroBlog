@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <script type="text/javascript" charset="utf-8" src="/static/script/jquery-1.7.min.js"></script>
+    <link rel="stylesheet" href="/static/css/base.css" type="text/css" media="screen" charset="utf-8">
+    <title>MiniMicroBlog</title>
+    <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+</head>
+<body>
+    <div id="container" class="newlook">
+        <div id="header">
+            <h1>
+                <a hidefocus="true" class="global-header-anchor" href="http://127.0.0.1">
+                    <p class="pngfix global-header-content logo_20120101">首页</p>
+                </a>
+            </h1>
+            <div id="navigation" class="ui-roundedbox">
+                <div class="ui-roundedbox-corner ui-roundedbox-tl">
+                    <div class="ui-roundedbox-corner ui-roundedbox-tr">
+                        <div class="ui-roundedbox-corner ui-roundedbox-bl">
+                            <div class="ui-roundedbox-corner ui-roundedbox-br">
+                                <div class="ui-roundedbox-content">
+                                    <ul>
+                                        <li>
+                                            <a href="http://127.0.0.1/">首页</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://127.0.0.1/">登录</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://127.0.0.1/">注册</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table id="columns">
+            <tbody>
+                <tr>
+                    <td id="main">
+                        <p id="headline">Django，不错的开发框架</p>
+                        <ul id="slogan">
+                            <li id="what">
+                                <p>mini轻博客<br>记录生活点滴</p>
+                            </li>
+                            <li id="who">
+                                <p>交流分享<br>拉近你和朋友</p>
+                            </li>
+                            <li id="how">
+                                <p>随时随地<br>手机，QQ，计算机</p>
+                            </li>
+                        </ul>
+                        <p id="get-started">
+                            <a href="/register">注册</a>
+                        </p>
+                    </td>
+                    <td id="sidebar">
+                        <div class="sect first-sect">
+                            <h2>登录</h2>
+                            <form method="post" action="/login" id="login">
+                                <p>
+                                    <label class="label_input" for="loginname">Email：</label>
+                                    <input tabindex="1" type="text" name="loginname" id="loginname" class="input_text" value="">
+                                </p>
+                                <p>
+                                    <label class="label_input" for="loginpass">密码：</label>
+                                    <input tabindex="2" type="password" name="loginpass" id="loginpass" class="input_text" value="" maxlength="32">
+                                </p>
+                                <p class="act">
+                                    <a href="/reset" id="forgot">忘记密码了？</a>
+                                    <input type="hidden" name="action" value="login">
+                                    <input tabindex="11" type="submit" class="formbutton" value="登录">
+                                </p>
+                            </form>
+                        </div>
+                        <div class="sect">
+                            <h2>公告</h2>
+                            <ul class="tlist">
+                                <li>
+                                    <a href="http://help.fanfou.com/joinus.html" target="_blank">联系我</a>
+                                    <sup style="font-size:12px;color:red;">New!</sup>
+                                </li>
+                                <li>
+                                    短信请发到：18730231197
+                                </li>
+                                <li>
+                                    邮编到：071002</li>
+                                <li>
+                                    Call Me：18730231197
+                                </li>
+                                <li>Email：825128975@qq.com
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="footer" class="ui-roundedbox">
+            <div class="ui-roundedbox-corner ui-roundedbox-tl">
+                <div class="ui-roundedbox-corner ui-roundedbox-tr">
+                    <div class="ui-roundedbox-corner ui-roundedbox-bl">
+                        <div class="ui-roundedbox-corner ui-roundedbox-br">
+                            <div class="ui-roundedbox-content">
+                                <div class="police-info">
+                                    <a class="police" target="_blank" href="http://www.sznet110.gov.cn/index.jsp"><img src="http://static.fanfou.com/img/j_02.jpg" alt=""></a>
+                                    <a class="police" target="_blank" href="http://www.sznet110.gov.cn/webrecord/innernet/Welcome.jsp?bano=4403301900851"><img src="http://static.fanfou.com/img/sznet110gangting.gif" alt=""></a>
+                                </div>
+                                <a href="http://127.0.0.1/aboutweb.html" target="_blank">关于小站</a>
+                                " | "
+                                <a href="http://127.0.0.1/aboutme.html" target="_blank">个人介绍</a>
+                                " | "
+                                <a href="http://127.0.0.1/webinfo.html" target="_blank">网站声明</a>
+                                <br>
+                                <p>
+                                    ©
+                                    <span title="I:0; Q:2; S:1; C:0; F:0; T:6.01; H:v17">2012</span> MiniMicroBlog
+                                    <a href="http://www.miibeian.gov.cn" target="_blank" id="miibeian">京药准字号1314521</a>
+                                    <span class="szinfo">菜鸟开源学习 版权所有</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

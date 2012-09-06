@@ -1,0 +1,56 @@
+{% extends "base/base.html" %}
+{% block content %}
+{% load usertags %}
+    <table id="columns">
+        <tbody>
+        <tr>
+            <td id="main">
+                <div id="header">
+                <h2 >个人管理</h2>
+                </div>
+                <div id="stream" class="message"><ol class="wa solo"></ol></div>
+                <div id="body" class="ui-roundedbox">
+                    <div id="settings" class="inner-content">
+                        <form action="." method="post" id="serprofile" class="nf settings" enctype="multipart/form-data">
+                            <p>
+                                <label class="label_input" for="realname">姓名:</label>
+                                <input type="text" name="realname" class="input_text" value="{{ userinfo.realname }}" size="25" />
+                            </p>
+                            <p>
+                                <label class="label_input" for="email">Email:</label>
+                                <input type="text" name="email" class="input_text" value="{{ userinfo.email }}" size="25" />
+                            </p>
+                            <p>
+                                <label class="label_input" for="url">博客Url:</label>
+                                <input type="text" name="url" class="input_text" value="{{ userinfo.url }}" size="25" />
+                            </p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label class="label_input" for="photo">头像:</label>
+                                    </td>
+                                    <td>
+                                        <img src="{{ userinfo.photo|photo }}" width="60px" height="60px"/>
+                                    </td>
+                                    <td>
+                                        <input type="file" name="photo" class="input_file">
+                                        最大上传1M照片
+                                    </td>
+                                </tr>
+                            </table>
+                            <p>
+                                <label class="label_input" for="aboutme">自我介绍:</label>
+                                <textarea name="aboutme" class="text" cols="50" style="overflow:hidden;" rows="40">{{ userinfo.aboutme }}</textarea>
+                            </p>
+                            <p class="act">
+                                <input tabindex="11" type="submit" class="formbutton" value="保存">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </td>
+            {% include "sidebar/sidebar.html" %}
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,19 @@
+
+<div id="publish">
+    <form method="post" action="/user/publish/">
+        <p>
+            想说点什么呢？
+        </p>
+        <p>
+            <textarea name="message" class="text" rows="5" cols="75"></textarea>
+        </p>
+        <p>
+            {% for i in error.values %}
+                {{ i }}
+            {% endfor %}
+        </p>
+        <p class="act">
+            <input tabindex="11" type="submit" class="formbutton" value="发表">
+        </p>
+    </form>
+</div>

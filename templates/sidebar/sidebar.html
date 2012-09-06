@@ -1,0 +1,65 @@
+{% load usertags %}
+<td id="sidebar">
+    <div id="user_top">
+        <h3>{{ userinfo.username }}的小屋</h3>
+            <a href="/user/setting/"><img src="{{ userinfo.photo|photo }}" title="{{ userinfo.username }}"></a>
+        <br>
+    </div>
+    <div class="sect">
+        <h2>信息</h2>
+        <ul class="tlist">
+            <li>
+                真实姓名：<a href="{{ userinfo.url }}">{{ userinfo.realname }}</a>
+            </li>
+            <li>
+                Email：{{ userinfo.email }}
+            </li>
+            <li>
+                状态：{{ userinfo.aboutme }}
+            </li>
+            <li>
+                关注的好友：
+                <br>
+                {% if not friendlist %}
+                不勒个是吧，你一个好友都木有......
+                {% else %}
+                <ul class="alist">
+                    {% for friend in friendlist|slice:":8" %}
+                    <li>
+                    <a href="/user/{{ friend.username }}/1/"><img src="{{ friend.photo|photo }}"  title="{{ friend.username }}"></a>
+                    </li>
+                    {% endfor %}
+                    <li><a href="/user/follow/1/">more...</a></li>
+                </ul>
+                {% endif %}
+            </li>
+        </ul>
+    </div>
+    <div class="stabs" id="navtabs">
+        <ul>
+            <h2>快捷设置</h2>
+            <li><a href="/user/setting/"><span class="label">信息管理</span> </a></li>
+            <li><a href="/user/follow/1/"><span class="label">我的关注</span> </a></li>
+            <li><a href="/user/changepwd/"><span class="label">密码修改</span></a></li>
+        </ul>
+    </div>
+    <div class="sect">
+        <h2>公告</h2>
+        <ul class="tlist">
+            <li>
+                <a href="/help/aboutme/" target="_blank">联系我</a>
+                <sup style="font-size:12px;color:red;">New!</sup>
+            </li>
+            <li>
+                短信请发到：18730231197
+            </li>
+            <li>
+                邮编到：071002</li>
+            <li>
+                Call Me：18730231197
+            </li>
+            <li>Email：825128975@qq.com
+            </li>
+        </ul>
+    </div>
+</td>

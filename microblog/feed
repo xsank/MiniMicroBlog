@@ -1,0 +1,66 @@
+# -*- coding:utf-8 -*-
+from django.contrib.syndication.feeds import Feed,FeedDoesNotExist
+from django.core.exceptions import ObjectDoesNotExist
+from microblog.models import Shuoshuo,User
+from utils import formatter
+from settings import *
+from microblog.templatetags import usertags
+
+GLOBAL_TITLE_TEMPLATE='feed/title.html'
+GLOBAL_DESCRIPTION_TEMPLATE='feed/description.html'
+
+class RSSRecentShuoshuo(Feed):
+    title=u'%s 小站' % APP_NAME
+    link = APP_DOMAIN
+    description =u'%s 最新发布的说说' % APP_NAME
+    author='%s RSS generator' % APP_AUTHOR
+    title_template = GLOBAL_TITLE_TEMPLATE
+    description_template = GLOBAL_DESCRIPTION_TEMPLATE
+
+    def items(self):
+        return Shuoshuo.objects.order_by('-uptime')[:10]
+
+    def itemAuthorName(self,item):
+        return item.user.realname
+
+    def itemAuthorLink(self,item):
+        return usertags.userUrl(item.user.username)
+
+    def itemLink(self,item):
+        return item.getAbsoluteUrl()
+
+    def itemPutime(self,item):
+        return item.uptime
+
+class RSSUserRecentShuoshuo(Feed):
+    def title(self,obj):
+        return u'%s %s最近说说' % (APP_NAME,obj.realname)
+
+    def link(self,obj):
+        return '%s user/%s' % (APP_DOMAIN,obj.username)
+
+    def description(self,obj):
+        return u'%s 在 %s 上面最近发布的说说' % (APP_NAME,obj.realname)
+
+    def author(self,obj):
+        return '%s' % obj.realname
+
+    def get_object(self, bits):
+        if len(bits) !=1:
+            raise ObjectDoesNotExist
+        return User.objects.get(username=bits[0])
+
+    def items(self,obj):
+        return Shuoshuo.objects.filter(user=obj).order_by('-uptime')[:15]
+
+    def itemAuthorName(self,item):
+        return item.user.realname
+
+    def itemAuthorLink(self,item):
+        return usertags.userUrl(item.user.username)
+
+    def itemLink(self,item):
+        return item.getAbsoluteUrl()
+
+    def itemPubtime(self,item):
+        return item.uptime

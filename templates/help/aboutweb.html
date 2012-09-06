@@ -1,0 +1,35 @@
+{% extends "help/base.html" %}
+{% block content %}
+    <div id="body" class="ui-roundedbox">
+        <div class="ui-roundedbox-corner ui-roundedbox-tl">
+            <div class="ui-roundedbox-corner ui-roundedbox-tr">
+                <div class="ui-roundedbox-corner ui-roundedbox-bl">
+                    <div class="ui-roundedbox-corner ui-roundedbox-br">
+                        <div class="ui-roundedbox-content">
+                            <div class="inner-content">
+                                {% include "sidebar/sidebarhelp.html" %}
+                                <div id="help">
+                                    <h2>关于小站</h2>
+                                    <ul>
+                                        <li>
+                                            1.首先对于网友李华顺无私开源的贡献表示真心感谢！我从他的开源代码中学习了很多！
+                                        </li>
+                                        <li>
+                                            2.这是我用Django开发的第二个比较正式的Web应用程序，在这里真心的赞一下Django！
+                                        </li>
+                                        <li>
+                                            3.这是一个比较完整Web应用程序，完全仿照“饭否”来实现，现在已经实现了我的第一个版本，具有了饭否的主要功能，如果继续完善会不断接近！
+                                        </li>
+                                        <li>
+                                            4.麻雀虽小，五脏俱全，最后丢出来给大家交流学习下，接受一切砖砸炮轰！
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

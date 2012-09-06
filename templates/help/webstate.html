@@ -1,0 +1,35 @@
+{% extends "help/base.html" %}
+{% block content %}
+    <div id="body" class="ui-roundedbox">
+        <div class="ui-roundedbox-corner ui-roundedbox-tl">
+            <div class="ui-roundedbox-corner ui-roundedbox-tr">
+                <div class="ui-roundedbox-corner ui-roundedbox-bl">
+                    <div class="ui-roundedbox-corner ui-roundedbox-br">
+                        <div class="ui-roundedbox-content">
+                            <div class="inner-content">
+                                {% include "sidebar/sidebarhelp.html" %}
+                                <div id="help">
+                                    <h2>网站声明</h2>
+                                    <ul>
+                                        <li>
+                                            1.语言采用Python
+                                        </li>
+                                        <li>
+                                            2.开发框架使用Django
+                                        </li>
+                                        <li>
+                                            3.数据库使用Mysql
+                                        </li>
+                                        <li>
+                                            4.这里还非常感谢调试器Pydev！
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
