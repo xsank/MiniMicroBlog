@@ -8,7 +8,7 @@ from django.template import RequestContext,Context,loader
 from django.shortcuts import render_to_response,get_object_or_404
 from django.views.generic import list_detail
 from django.contrib.auth.decorators import login_required
-from utils import mailer,formatter,encrypt,uploader,mail
+from utils import mailer,formatter,encrypt,upload,mail
 import random,string
 
 def signup(request):
@@ -164,7 +164,7 @@ def setting(request):
             userinfo.url=request.POST['url']
             userinfo.photo=request.FILES.get('photo',None)
             if userinfo.photo:
-                uploadstate=uploader.uploadPhoto(userinfo.photo)
+                uploadstate=upload.uploadPhoto(userinfo.photo,userinfo.username)
                 if uploadstate['success']:
                     userinfo.photo=uploadstate['message']
             userinfo.save()

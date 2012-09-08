@@ -22,11 +22,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/urls.py">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microblog/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="1" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.79787236">
+            <state line="36" column="28" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uploader.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/uploader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="45" selection-start="0" selection-end="1619" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/upload.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="464" selection-end="464" vertical-scroll-proportion="0.9200969">
+              <folding>
+                <element signature="e#23#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,25 +54,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/login/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="64" selection-start="1343" selection-end="1383" vertical-scroll-proportion="-6.107143">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="regsuccess.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/prompt/regsuccess.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="119" selection-start="986" selection-end="986" vertical-scroll-proportion="-6.107143">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reset.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login/reset.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="80" selection-start="712" selection-end="712" vertical-scroll-proportion="-3.392857">
+            <state line="39" column="64" selection-start="1343" selection-end="1383" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,7 +63,7 @@
       <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microblog/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="2805" selection-end="3092" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,7 +72,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/microblog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="9" selection-start="5909" selection-end="5909" vertical-scroll-proportion="0.0">
+            <state line="166" column="0" selection-start="6438" selection-end="6438" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#23#43#0" expanded="true" />
               </folding>
@@ -78,19 +80,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sidebar/sidebar.html">
+      <file leaf-file-name="files.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/django/db/models/fields/files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.0357144">
+            <state line="157" column="0" selection-start="5013" selection-end="5013" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <file leaf-file-name="sidebar.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sidebar/sidebar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="0" selection-start="4626" selection-end="4626" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/sidebar/footer.html" />
         <option value="$PROJECT_DIR$/templates/microblog/master.html" />
         <option value="$PROJECT_DIR$/templates/base/base.html" />
         <option value="$PROJECT_DIR$/templates/help/base.html" />
@@ -140,6 +141,7 @@
         <option value="$PROJECT_DIR$/templates/prompt/resetsuccess.html" />
         <option value="$PROJECT_DIR$/utils/mail.py" />
         <option value="$PROJECT_DIR$/microblog/views.py" />
+        <option value="$PROJECT_DIR$/utils/upload.py" />
       </list>
     </option>
   </component>
@@ -427,6 +429,25 @@
       <option name="MULTIPROCESS" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="MiniMicroBlog" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -446,25 +467,6 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <module name="MiniMicroBlog" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -544,15 +546,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="746" extended-state="7" />
+    <frame x="-4" y="-4" width="1374" height="746" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17678301" sideWeight="0.7121212" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28787878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18361153" sideWeight="0.7744108" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22558923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16835018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -621,130 +623,101 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/sidebar/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="0" selection-end="1971" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sidebar/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="73" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/microblog/changepwd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="30" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1346846301390" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="62" selection-start="1063" selection-end="1063" vertical-scroll-proportion="-10.857142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/reset.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="80" selection-start="712" selection-end="712" vertical-scroll-proportion="-3.392857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="4626" selection-end="4626" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="110" column="0" selection-start="4626" selection-end="4626" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/prompt/resetsuccess.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="123" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.6551724">
-          <folding />
-        </state>
+        <state line="18" column="123" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.6551724" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/prompt/regsuccess.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="119" selection-start="986" selection-end="986" vertical-scroll-proportion="-6.107143">
-          <folding />
-        </state>
+        <state line="18" column="119" selection-start="986" selection-end="986" vertical-scroll-proportion="-6.107143" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/servers/basehttp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="30" selection-start="5647" selection-end="5647" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="610" column="0" selection-start="21750" selection-end="21750" vertical-scroll-proportion="0.33171913" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/mail.py">
+    <entry file="file://C:/Python27/Lib/site-packages/django/utils/autoreload.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="0" selection-end="567" vertical-scroll-proportion="0.0">
+        <state line="90" column="0" selection-start="3531" selection-end="3531" vertical-scroll-proportion="0.3156682" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="1" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="64" selection-start="1343" selection-end="1383" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microblog/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="2805" selection-end="3092" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sidebar/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.0357144">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/index.html">
+    <entry file="file://$PROJECT_DIR$/utils/mail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="64" selection-start="1343" selection-end="1383" vertical-scroll-proportion="-6.107143">
+        <state line="20" column="0" selection-start="0" selection-end="567" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microblog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="28" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/uploader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="45" selection-start="0" selection-end="1619" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="169" column="30" selection-start="5647" selection-end="5647" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/db/models/fields/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="0" selection-start="5013" selection-end="5013" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microblog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="9" selection-start="5909" selection-end="5909" vertical-scroll-proportion="0.0">
+        <state line="166" column="0" selection-start="6438" selection-end="6438" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#23#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/urls.py">
+    <entry file="file://$PROJECT_DIR$/utils/upload.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="1" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.79787236">
-          <folding />
+        <state line="20" column="0" selection-start="464" selection-end="464" vertical-scroll-proportion="0.9200969">
+          <folding>
+            <element signature="e#23#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
