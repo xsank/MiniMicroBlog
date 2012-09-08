@@ -70,6 +70,17 @@ class ChangePwdForm(forms.Form):
         if lenpwd <6:
             raise forms.ValidationError(u'密码不能少于6位！')
 
+class ResetForm(forms.Form):
+    email=forms.EmailField(label='Email:',required=True)
+
+    def clean_email(self):
+        email=self.cleaned_data['email']
+        if not User.objects.filter(email=email):
+            raise forms.ValidationError(u'对不起，不存在这样的邮箱，你再想想！')
+        return email
+
+
+
 
 
 

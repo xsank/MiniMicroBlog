@@ -162,5 +162,13 @@ TEMPLATE_CONTEXT_PROCESSORS=(
     "django.contrib.auth.context_processors.auth",
 )
 
+#Email服务器参数
+
+EMAIL_HOST='smtp.sina.com'
+EMAIL_HOST_PASSWORD='xsanksae'
+EMAIL_HOST_USER='minisns@sina.com'
+EMAIL_SUBJECT_PREFIX='[Xsank]'
+
+
 
 

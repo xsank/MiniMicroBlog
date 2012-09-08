@@ -8,7 +8,8 @@ from django.template import RequestContext,Context,loader
 from django.shortcuts import render_to_response,get_object_or_404
 from django.views.generic import list_detail
 from django.contrib.auth.decorators import login_required
-from utils import mailer,formatter,encrypt,uploader
+from utils import mailer,formatter,encrypt,uploader,mail
+import random,string
 
 def signup(request):
     if request.method=='POST':
@@ -153,8 +154,6 @@ def loadusershuoshuo(request,username,pageindex=1):
         return HttpResponseRedirect('/')
 
 def setting(request):
-    for i in request:
-        print i
     if request.session:
         userinfo=User.objects.get(id=request.session['userid'])
         friendlist=userinfo.friend.all()
@@ -189,7 +188,7 @@ def changepwd(request):
             if request.POST['newpassword'] != request.POST['checkpassword']:
                 error['nomatch']=u'密码不一致！'
             if not error:
-                user.userpwd=request.POST['newpassword']
+                user.userpwd=encrypt.encodeMD5(request.POST['newpassword'])
                 user.save()
                 error['no']=u'修改成功！'
         return render_to_response('microblog/changepwd.html',{
@@ -198,6 +197,22 @@ def changepwd(request):
             'error':error,'userinfo':user})
     else:
         return HttpResponseRedirect('/')
+
+def sendpwd(request):
+    if request.method=='POST':
+        form=ResetForm(request.POST)
+        if form.is_valid():
+            email=form.clean_email()
+            userinfo=User.objects.get(email=email)
+            newpwd=''.join(random.sample(string.ascii_letters+string.digits,8))
+            userinfo.userpwd=encrypt.encodeMD5(newpwd)
+            userinfo.save()
+            mail.send_mail_password(userinfo,newpwd)
+            return HttpResponseRedirect('/reset/success/')
+    else:
+        form=ResetForm()
+    variables=RequestContext(request,{'form':form})
+    return render_to_response('login/reset.html',variables)
 
 def publish(request):
     if request.session:
