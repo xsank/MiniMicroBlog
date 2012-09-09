@@ -82,6 +82,34 @@ class Shuoshuo(models.Model):
         verbose_name=u'说说'
         verbose_name_plural=u'说说'
 
+class Comment(models.Model):
+    comment=models.TextField('留言',max_length=500)
+    uptime=models.DateTimeField('留言时间',auto_now=True)
+    shuoshuo=models.ForeignKey(Shuoshuo,verbose_name='说说')
+    user=models.ForeignKey(User,verbose_name='留言人')
+
+    def __unicode__(self):
+        return self.comment
+
+    def shortcut(self):
+        return formatter.substr(self.comment,30)
+
+    def fomattime(self):
+        return self.uptime.strftime('%Y-%m-%d %H:%M:%S')
+
+    def username(self):
+        return self.user.username
+
+    def save(self):
+        self.comment=formatter.contentTinyUrl(self.comment)
+        self.comment=html.escape(self.comment)
+        super(Comment,self).save()
+
+    class Meta:
+        verbose_name=u'留言'
+        verbose_name_plural=u'留言'
+
+
 
 
 

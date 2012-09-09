@@ -22,86 +22,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microblog/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="28" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uploader.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/uploader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="45" selection-start="0" selection-end="1619" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/upload.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="464" selection-end="464" vertical-scroll-proportion="0.9200969">
-              <folding>
-                <element signature="e#23#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="64" selection-start="1343" selection-end="1383" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microblog/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/microblog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="0" selection-start="6438" selection-end="6438" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#23#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="files.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://C:/Python27/Lib/site-packages/django/db/models/fields/files.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="157" column="0" selection-start="5013" selection-end="5013" vertical-scroll-proportion="0.0">
+            <state line="271" column="0" selection-start="10404" selection-end="10404" vertical-scroll-proportion="2.242268">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sidebar.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sidebar/sidebar.html">
+      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microblog/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="12" column="11" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mail.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/mail.py">
+      <file leaf-file-name="commentitem.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/microblog/commentitem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="0" selection-end="567" vertical-scroll-proportion="0.0">
+            <state line="9" column="39" selection-start="467" selection-end="467" vertical-scroll-proportion="-3.2264152">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commentlist.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/microblog/commentlist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="65" selection-start="285" selection-end="285" vertical-scroll-proportion="-4.071429">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="56" selection-start="1926" selection-end="1978" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shuoshuodetail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/microblog/shuoshuodetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="10" selection-start="1605" selection-end="1605" vertical-scroll-proportion="-5.018868">
               <folding />
             </state>
           </provider>
@@ -110,7 +79,36 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="30" selection-start="5647" selection-end="5647" vertical-scroll-proportion="0.0">
+            <state line="124" column="4" selection-start="4508" selection-end="4508" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microblog/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="109" column="33" selection-start="2327" selection-end="3083" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/microblog/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="41" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listitem.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/microblog/listitem.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="169" selection-start="30" selection-end="196" vertical-scroll-proportion="-1.3571428">
               <folding />
             </state>
           </provider>
@@ -126,22 +124,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/microblog/master.html" />
-        <option value="$PROJECT_DIR$/templates/base/base.html" />
-        <option value="$PROJECT_DIR$/templates/help/base.html" />
-        <option value="$PROJECT_DIR$/templates/help/aboutme.html" />
-        <option value="$PROJECT_DIR$/templates/help/aboutweb.html" />
         <option value="$PROJECT_DIR$/templates/help/webstate.html" />
-        <option value="$PROJECT_DIR$/microblog/forms.py" />
         <option value="$PROJECT_DIR$/templates/login/index.html" />
-        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/templates/login/reset.html" />
-        <option value="$PROJECT_DIR$/urls.py" />
         <option value="$PROJECT_DIR$/templates/prompt/regsuccess.html" />
         <option value="$PROJECT_DIR$/templates/prompt/resetsuccess.html" />
         <option value="$PROJECT_DIR$/utils/mail.py" />
-        <option value="$PROJECT_DIR$/microblog/views.py" />
         <option value="$PROJECT_DIR$/utils/upload.py" />
+        <option value="$PROJECT_DIR$/templates/microblog/shuoshuodetail.html" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/microblog/forms.py" />
+        <option value="$PROJECT_DIR$/microblog/models.py" />
+        <option value="$PROJECT_DIR$/microblog/admin.py" />
+        <option value="$PROJECT_DIR$/urls.py" />
+        <option value="$PROJECT_DIR$/templates/microblog/commentlist.html" />
+        <option value="$PROJECT_DIR$/templates/microblog/commentitem.html" />
+        <option value="$PROJECT_DIR$/microblog/views.py" />
       </list>
     </option>
   </component>
@@ -553,11 +551,11 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18361153" sideWeight="0.7744108" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22558923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18968134" sideWeight="0.7744108" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22558923" sideWeight="0.4969651" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16835018" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22558923" sideWeight="0.49772382" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20707071" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -623,101 +621,125 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+    <entry file="file://$PROJECT_DIR$/templates/microblog/square.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="4626" selection-end="4626" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/prompt/resetsuccess.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="123" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.6551724" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/prompt/regsuccess.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="119" selection-start="986" selection-end="986" vertical-scroll-proportion="-6.107143" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/core/servers/basehttp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="610" column="0" selection-start="21750" selection-end="21750" vertical-scroll-proportion="0.33171913" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/utils/autoreload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="3531" selection-end="3531" vertical-scroll-proportion="0.3156682" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="1" selection-start="2665" selection-end="2665" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="64" selection-start="1343" selection-end="1383" vertical-scroll-proportion="0.0">
+        <state line="10" column="78" selection-start="283" selection-end="341" vertical-scroll-proportion="-6.785714">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/microblog/useritem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="61" selection-start="44" selection-end="256" vertical-scroll-proportion="-2.0357144">
+          <folding>
+            <marker date="1346911405734" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1346911405734" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1346911405734" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1346911405734" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microblog/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sidebar/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="80" column="0" selection-start="3093" selection-end="3093" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/mail.py">
+    <entry file="file://$PROJECT_DIR$/templates/microblog/shuoshuolist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="0" selection-end="567" vertical-scroll-proportion="0.0" />
+        <state line="6" column="5" selection-start="160" selection-end="160" vertical-scroll-proportion="-4.071429">
+          <folding>
+            <marker date="1346652151828" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1346652151828" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="36" selection-start="4600" selection-end="4600" vertical-scroll-proportion="0.5520581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/microblog/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="62" selection-start="511" selection-end="511" vertical-scroll-proportion="-8.821428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/microblog/listitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="169" selection-start="30" selection-end="196" vertical-scroll-proportion="-1.3571428">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microblog/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="28" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0">
+        <state line="109" column="33" selection-start="2327" selection-end="3083" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/uploader.py">
+    <entry file="file://$PROJECT_DIR$/microblog/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="45" selection-start="0" selection-end="1619" vertical-scroll-proportion="0.0">
+        <state line="32" column="41" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microblog/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/microblog/commentlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="65" selection-start="285" selection-end="285" vertical-scroll-proportion="-4.071429">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/microblog/commentitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="467" selection-end="467" vertical-scroll-proportion="-3.2264152">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/microblog/shuoshuodetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="10" selection-start="1605" selection-end="1605" vertical-scroll-proportion="-5.018868">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="30" selection-start="5647" selection-end="5647" vertical-scroll-proportion="0.0" />
+        <state line="124" column="4" selection-start="4508" selection-end="4508" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/django/db/models/fields/files.py">
+    <entry file="file://$PROJECT_DIR$/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="157" column="0" selection-start="5013" selection-end="5013" vertical-scroll-proportion="0.0">
+        <state line="38" column="56" selection-start="1926" selection-end="1978" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/microblog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="0" selection-start="6438" selection-end="6438" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#23#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/upload.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="464" selection-end="464" vertical-scroll-proportion="0.9200969">
-          <folding>
-            <element signature="e#23#36#0" expanded="true" />
-          </folding>
+        <state line="271" column="0" selection-start="10404" selection-end="10404" vertical-scroll-proportion="2.242268">
+          <folding />
         </state>
       </provider>
     </entry>

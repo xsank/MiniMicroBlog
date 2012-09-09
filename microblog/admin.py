@@ -19,6 +19,15 @@ class ShuoshuoAdmin(admin.ModelAdmin):
     search_fields = ['message']
     list_per_page = 10
 
+
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ('id','username','shortcut')
+    list_display_links = ('id','shortcut')
+    search_fields = ['comment']
+    list_per_page = 10
+
+
 admin.site.register(Shuoshuo,ShuoshuoAdmin)
 admin.site.register(PostWay,PostWayAdmin)
 admin.site.register(User,UserAdmin)
+admin.site.register(Comment,CommentAdmin)

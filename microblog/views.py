@@ -231,12 +231,27 @@ def publish(request):
                 )
                 shuoshuo.save()
                 error['no']=u'发表成功！'
-        return render_to_response('microblog/home.html',{
-            'session':request.session,
-            'friendlist':friendlist,
-            'error':error,
-            'userinfo':user})
-        #return HttpResponseRedirect('/home/1/')
+        return HttpResponseRedirect('/home/1/')
+    else:
+        return HttpResponseRedirect('/')
+
+def leavemsg(request):
+    if request.session:
+        error={}
+        user=User.objects.get(id=request.session['userid'])
+        if request.method=='POST':
+            lenm=len(request.POST['comment'])
+            if lenm<3 or lenm>100:
+                error['wrong']=u'你写的不正常，刷的吧！！！'
+            if not error:
+                comment=Comment(
+                    comment=request.POST['comment'],
+                    shuoshuo_id=request.POST['ssid'],
+                    user_id=request.session['userid'],
+                )
+                comment.save()
+                error['no']=u'留言成功！'
+        return HttpResponseRedirect('/message/'+request.POST['ssid']+'/')
     else:
         return HttpResponseRedirect('/')
 
@@ -244,10 +259,13 @@ def ssdetail(request,ssid):
     if request.session:
         userinfo=User.objects.get(id=request.session['userid'])
         shuoshuo=get_object_or_404(Shuoshuo,id=ssid)
+        commentlist=Comment.objects.filter(shuoshuo=shuoshuo)
         return render_to_response('microblog/shuoshuodetail.html',{
             #'userinfo':userinfo,
             'session':request.session,
             'shuoshuo':shuoshuo,
+            'photo':userinfo.photo,
+            'list':commentlist,
         })
     else:
         return HttpResponseRedirect('/')
