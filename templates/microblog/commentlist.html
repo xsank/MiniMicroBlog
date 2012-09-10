@@ -1,0 +1,10 @@
+
+{% load usertags %}
+{% include "microblog/commentitem.html" %}
+<div class="msg">
+    <form action='/user/leavemsg/' method='post'>
+        <p><textarea id="id_comment" rows="5" cols="110" name="comment"></textarea></p>
+        <input value="{{ shuoshuo.id }}" name="ssid" type="hidden">
+        <p><input tabindex="11" type="submit" class="formbutton" value="回复"></p>
+    </form>
+</div>

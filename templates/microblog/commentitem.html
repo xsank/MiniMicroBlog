@@ -1,0 +1,21 @@
+{% load usertags %}
+<div id="stream" class="message" style="padding-left: 45px;">
+    <ol class="wa">
+    {% if list %}
+        {%for comment in list%}
+            <li class="unlight">
+                <span>
+                     <a class="avatar" href="/user/{{ comment.user.username }}/1/" ><img src="{{ comment.user.photo|photo }}" width="41px" height="41px" title="{{ comment.user.username }}" /></a>
+                </span>
+                 <span class="content">
+                     {{comment.user.username}}回复说:{{comment.comment|safe}}
+                </span>
+                <span class="stamp">{{ comment.uptime|timesince }}前</span>
+            </li>
+        {%endfor%}
+    {% else %}
+        暂且还没有留言，你要当沙发吗？
+    {% endif %}
+    </ol>
+
+</div>
