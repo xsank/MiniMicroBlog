@@ -1,8 +1,8 @@
 <ol class="wa">
 {% if not friendlist %}
-<p>
-    你现在一个关注的人都木有，打算怎么办呢？赶紧出发吧！
-</p>
+    <li class="unlight">
+        <p>你现在一个关注的人都木有，打算怎么办呢？赶紧出发吧！</p>
+    </li>
 {% else %}
     {% for item in friendlist %}
         <li class="unlight">

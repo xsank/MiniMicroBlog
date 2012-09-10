@@ -1,7 +1,13 @@
 <ol class="wa">
+    {% if list %}
     {% for item in list %}
         <li class="unlight">
             {% include "microblog/listitem.html" %}
         </li>
     {% endfor %}
+    {% else %}
+        <li class="unlight">
+            <p>抱歉，你还没有发表任何说说，要来两句吗？</p>
+        </li>
+    {% endif %}
 </ol>
