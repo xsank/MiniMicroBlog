@@ -1,0 +1,10 @@
+{% load usertags %}
+<span>
+    <a class="avatar" href="/user/{{ item.user.username }}/1/" ><img src="{{ item.user.photo|photo }}" width="41px" height="41px" title="{{ item.user.username }}" /></a>
+    <h2>公告人：{{ item.user.realname }}</h2>
+</span>
+<span class="content">{{ item.msgtext }}<a href="/detailsysmsg/{{ item.id }}">详情</a></span>
+<span class="stamp">
+    {{ item.sendtime|date}}
+    <span><a href="/prompt/delsysmsg/{{ item.id }}/"> 删除</a></span>
+</span>

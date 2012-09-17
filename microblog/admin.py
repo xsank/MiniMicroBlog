@@ -27,7 +27,30 @@ class CommentAdmin(admin.ModelAdmin):
     list_per_page = 10
 
 
+class MsgTextAdmin(admin.ModelAdmin):
+    list_display = ('id','senduser','msgtext','sendtime')
+    list_display_links = ('id','msgtext')
+    search_fields = ['msgtext']
+    list_per_page = 10
+
+
+class MessageAdmin(admin.ModelAdmin):
+    list_display = ('id','recvuser','message','kind')
+    list_display_links = ('id','message')
+    search_fields = ['message']
+    list_per_page = 10
+
+
+class StatusAdmin(admin.ModelAdmin):
+    list_display = ('id','kind')
+    list_display_links = ('id','kind')
+    list_per_page = 10
+
+
 admin.site.register(Shuoshuo,ShuoshuoAdmin)
 admin.site.register(PostWay,PostWayAdmin)
 admin.site.register(User,UserAdmin)
 admin.site.register(Comment,CommentAdmin)
+admin.site.register(MsgText,MsgTextAdmin)
+admin.site.register(Message,MessageAdmin)
+admin.site.register(Status,StatusAdmin)

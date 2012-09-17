@@ -13,6 +13,15 @@
                             <ul>
                                 {% if session.islogin %}
                                     <li>
+                                        <a href="/sysmsg/1/">系统公告
+                                        <span style="color: red">
+                                            {% if count  %}
+                                                ({{ count }})
+                                            {% endif %}
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a href="/home/1/">家园</a>
                                     </li>
                                     <li>

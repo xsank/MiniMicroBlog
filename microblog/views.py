@@ -45,6 +45,7 @@ def login(request):
             request.session['islogin']=True
             request.session['username']=username
             request.session['userid']=User.objects.get(username=request.session['username']).id
+            insertsysmsg(int(request.session['userid']))
             return HttpResponseRedirect('/home/1/')
     else:
         form=LoginForm()
@@ -62,6 +63,7 @@ def loadhome(request,pageindex=1):
     #for i in request.session.keys():
     #    print request.session[i]
     if request.session:
+        count=noreadcount(request.session['userid'])
         userinfo=User.objects.get(id=request.session['userid'])
         friendlist=userinfo.friend.all()
         mylist=Shuoshuo.objects.filter(user=userinfo).order_by('-id')
@@ -70,6 +72,7 @@ def loadhome(request,pageindex=1):
         lastindex=PAGE_SIZE*int(pageindex)
         mylist=mylist[offsetindex:lastindex]
         return  render_to_response('microblog/home.html',{
+            'count':count,
             'session':request.session,
             'userinfo':userinfo,
             'list':mylist,
@@ -91,6 +94,25 @@ def loadsquare(request,pageindex=1):
         return render_to_response('microblog/square.html',{
             'session':request.session,
             'userinfo':userinfo,'list':otherlist,
+            'friendlist':friendlist,
+            'pagebar':pagebar,}
+        )
+    else:
+        return HttpResponseRedirect('/')
+
+def loadsysmsg(request,pageindex=1):
+    if request.session:
+        userinfo=User.objects.get(id=request.session['userid'])
+        friendlist=userinfo.friend.all()
+        syslist=MsgText.objects.all().order_by('-id')
+        pagebar=formatter.pagebar(syslist,pageindex,'square','microblog/pagebar.html')
+        offsetindex=(int(pageindex)-1)*PAGE_SIZE
+        lastindex=PAGE_SIZE*int(pageindex)
+        syslist=syslist[offsetindex:lastindex]
+        return render_to_response('microblog/systemmsg.html',{
+            'session':request.session,
+            'userinfo':userinfo,
+            'list':syslist,
             'friendlist':friendlist,
             'pagebar':pagebar,}
         )
@@ -270,6 +292,22 @@ def ssdetail(request,ssid):
     else:
         return HttpResponseRedirect('/')
 
+def sysmsgdetail(request,sysmsgid):
+    if request.session:
+        userinfo=User.objects.get(id=request.session['userid'])
+        sysmsg=get_object_or_404(MsgText,id=sysmsgid)
+        usermsg=Message.objects.get(msgtext=sysmsg,user=userinfo)
+        usermsg.status_id=2
+        usermsg.save()
+        return render_to_response('microblog/sysmsgdetail.html',{
+            #'userinfo':userinfo,
+            'session':request.session,
+            'sysmsg':sysmsg,
+            'photo':userinfo.photo,
+            })
+    else:
+        return HttpResponseRedirect('/')
+
 def ssdelete(ssid):
     shuoshuo=get_object_or_404(Shuoshuo,id=ssid)
     shuoshuo.delete()
@@ -281,6 +319,10 @@ def addfriend(userinfo,username):
 def deletefriend(userinfo,username):
     friend=User.objects.get(username=username)
     userinfo.friend.remove(friend)
+
+def sysmsgdelete(sysmsgid,userid):
+    sysmsg=Message.objects.get(user_id=userid,msgText_id=sysmsgid)
+    sysmsg.status_id=3
 
 def systeminfo(request,way,param):
     if request.session:
@@ -296,6 +338,9 @@ def systeminfo(request,way,param):
         if way=="delshuoshuo":
             ssdelete(param)
             message=u"你自己的说说已经成功删除了！"
+        if way=="delsysmsg":
+            sysmsgdelete(param,request.session['userid'])
+            message=u"此系统消息已经删除！"
         return render_to_response('microblog/systeminfo.html',{
             'session':request.session,
             'message':message,
@@ -304,6 +349,32 @@ def systeminfo(request,way,param):
         })
     else:
         return HttpResponseRedirect('/')
+
+def insertsysmsg(userid):
+    from django.db import connection
+    cursor = connection.cursor()
+    cursor.execute("select * from microblog_msgtext where id not in (select msgText_id from microblog_message where user_id=%s)" ,[userid])
+    rows = cursor.fetchall()
+    if rows:
+        for i in rows:
+            cursor.execute("insert into microblog_message (user_id,msgText_id,status_id) values(%s,%s,1)" ,[userid,i[0]])
+            connection.commit()
+    connection.close()
+
+def noreadcount(userid):
+    from django.db import  connection
+    cursor=connection.cursor()
+    try:
+        cursor.execute("select count(*) from microblog_message where user_id=%s and status_id=1",[userid])
+    except :
+        return 0
+    result=cursor.fetchone()
+    count=result[0]
+    connection.close()
+    return count
+
+#def sysmsgcount(username):
+#    count=MsgText.objects.filter(id not in Message.objects.filter())
 
 
 

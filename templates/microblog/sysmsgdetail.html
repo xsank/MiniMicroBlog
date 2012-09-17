@@ -1,0 +1,29 @@
+{% extends "base/base.html" %}
+{% load usertags %}
+{% block content %}
+    <div id="body" class="narrowlook ui-roundedbox" style="margin-top: 1em;padding-bottom: 1.5em;">
+        <div id="topbox" class="ui-roundedbox-content" style="padding: 25px 15px 10px;">
+            <div id="info">
+                <div id="avatar">
+                    <a href="#"><img src="{{ sysmsg.user.photo|photo }}" class="msgat" title="{{ sysmsg.user.username }}"></a>
+                </div>
+                <div id="latest" class="msg">
+                    <h1>公告人：
+                        <a href="#">
+                           {{ sysmsg.user.username }}
+                        </a>
+                    </h1>
+                    <h2>
+                        <span class="content">
+                            {{ sysmsg.msgtext }}
+                        </span>
+                        <span class="stamp">
+                            {{ sysmsg.sendtime|date }}
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="bottombox"></div>
+    </div>
+{% endblock %}

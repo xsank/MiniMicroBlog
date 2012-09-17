@@ -1,0 +1,13 @@
+<ol class="wa">
+    {% if list %}
+        {% for item in list %}
+            <li class="unlight">
+                {% include "microblog/sysitem.html" %}
+            </li>
+        {% endfor %}
+    {% else %}
+        <li class="unlight">
+            <p>暂且还没有新的通知公告，有了的话会告诉你的哦！</p>
+        </li>
+    {% endif %}
+</ol>

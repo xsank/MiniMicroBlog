@@ -1,0 +1,21 @@
+{% extends "base/base.html" %}
+{% block content %}
+    <table id="columns">
+        <tbody>
+        <tr>
+            <td id="main">
+                <div id="header">
+                    <h2 >系统公告</h2>
+                </div>
+                <div id="content">
+                    <div id="stream" class="message"><ol class="wa solo"></ol>
+                        {% include "microblog/sysmsglist.html" %}
+                    </div>
+                    {% include "sidebar/pagebar.html" %}
+                </div>
+            </td>
+            {% include "sidebar/sidebar.html" %}
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}
